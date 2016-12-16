@@ -1,0 +1,68 @@
+Source: python-argh
+Section: python
+Priority: extra
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Build-Depends: debhelper (>= 9), dh-python,
+ python-all, python-setuptools (>= 0.6b3), python-pytest, python-mock,
+ python3-all, python3-setuptools (>= 0.6b3), python3-pytest, python3-mock,
+Standards-Version: 3.9.8.0
+Homepage: http://pypi.python.org/pypi/argh
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/python-argh.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/python-argh.git
+X-Python-Version: >= 2.6
+
+Package: python-argh
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Recommends: python-argcomplete
+Description: simple argparse wrapper (Python 2)
+ Argh provides a very simple wrapper for argparse.
+ .
+ Argparse is a very powerful tool; argh just makes it easy to use.
+ .
+ Here’s a list of features that argh adds to argparse:
+ .
+  * mark a function as a CLI command and specify its arguments before
+    the parser is instantiated;
+  * nested commands made easy: no messing with subparsers;
+  * infer command name from function name;
+  * infer argument type from the default value;
+  * infer argument action from the default value (for booleans);
+  * infer arguments from function signature;
+  * add an alias root command help for the --help argument;
+  * enable passing unwrapped arguments to certain functions instead of
+    an argparse.Namespace object.
+ .
+ Argh is fully compatible with argparse. You can mix argh-agnostic and
+ argh-aware code. Just keep in mind that dispatch() does some extra
+ work that a custom dispatcher may not do.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-argh
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Recommends: python3-argcomplete
+Description: simple argparse wrapper (Python 3)
+ Argh provides a very simple wrapper for argparse.
+ .
+ Argparse is a very powerful tool; argh just makes it easy to use.
+ .
+ Here’s a list of features that argh adds to argparse:
+ .
+  * mark a function as a CLI command and specify its arguments before
+    the parser is instantiated;
+  * nested commands made easy: no messing with subparsers;
+  * infer command name from function name;
+  * infer argument type from the default value;
+  * infer argument action from the default value (for booleans);
+  * infer arguments from function signature;
+  * add an alias root command help for the --help argument;
+  * enable passing unwrapped arguments to certain functions instead of
+    an argparse.Namespace object.
+ .
+ Argh is fully compatible with argparse. You can mix argh-agnostic and
+ argh-aware code. Just keep in mind that dispatch() does some extra
+ work that a custom dispatcher may not do.
+ .
+ This package installs the library for Python 3.
