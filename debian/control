@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Marco Nenciarini <mnencia@debian.org>
 Build-Depends: debhelper (>= 9), dh-python,
  python-all, python-setuptools (>= 0.6b3), python-pytest, python-mock,
- python3-all, python3-setuptools (>= 0.6b3), python3-pytest, python3-mock,
+ python3-all, python3-setuptools (>= 0.6b3), python3-pytest, python3-mock
 Standards-Version: 3.9.8.0
 Homepage: http://pypi.python.org/pypi/argh
 Vcs-Git: https://anonscm.debian.org/git/collab-maint/python-argh.git
